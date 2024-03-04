@@ -7,12 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Entidades\Shared\" />
-      <Folder Include="Entidades\ValueObjects\" />
-      <Folder Include="Exceptions\" />
-      <Folder Include="Interfaces\Services\" />
-      <Folder Include="Interfaces\Repository\" />
-      <Folder Include="Services\" />
+      <ProjectReference Include="..\ALAYSchoolGest.Infra.CrossCutting\ALAYSchoolGest.Infra.CrossCutting.csproj" />
     </ItemGroup>
 
 </Project>
