@@ -6,4 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="AdoNet\" />
+      <Folder Include="Interfaces\" />
+      <Folder Include="Mappings\" />
+      <Folder Include="Reposiotry\" />
+      <Folder Include="Uow\" />
+    </ItemGroup>
+
 </Project>
