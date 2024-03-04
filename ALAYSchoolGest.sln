@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{44
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{421653AC-ADCD-48F2-8B56-0B04C7361316}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Infra.Data", "src\ALAYSchoolGest.Infra.Data\ALAYSchoolGest.Infra.Data.csproj", "{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Infra", "src\ALAYSchoolGest.Infra.Data\ALAYSchoolGest.Infra.csproj", "{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Infra.CrossCutting", "src\ALAYSchoolGest.Infra.CrossCutting\ALAYSchoolGest.Infra.CrossCutting.csproj", "{2E625603-1DCB-4DE0-BE44-329DE3B21984}"
 EndProject
@@ -29,7 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XUnit", "XUnit", "{1FE9EB69
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Domain", "src\ALAYSchoolGest.Domain\ALAYSchoolGest.Domain.csproj", "{CF004E36-1641-4D14-83C5-FC7C780066D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALAYSchoolGest.Api", "src\ALAYSchoolGest.Api\ALAYSchoolGest.Api.csproj", "{A97A25EE-8861-486D-B1A7-2FBE1CAF4D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Api", "src\ALAYSchoolGest.Api\ALAYSchoolGest.Api.csproj", "{A97A25EE-8861-486D-B1A7-2FBE1CAF4D0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

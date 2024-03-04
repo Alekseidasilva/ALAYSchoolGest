@@ -1,6 +1,6 @@
-﻿namespace ALAYSchoolGest.Infra.Data.AdoNet;
+﻿namespace ALAYSchoolGest.Infra.AdoNet;
 
 public class Ado
 {
-    
+
 }

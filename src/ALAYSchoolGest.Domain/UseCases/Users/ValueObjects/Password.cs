@@ -2,7 +2,7 @@
 using ALAYSchoolGest.Infra.CrossCutting.Helpers._03_Domain;
 using System.Security.Cryptography;
 
-namespace ALAYSchoolGest.Domain.UseCases.User.ValueObjects;
+namespace ALAYSchoolGest.Domain.UseCases.Users.ValueObjects;
 
 public class Password : ValueObject
 {

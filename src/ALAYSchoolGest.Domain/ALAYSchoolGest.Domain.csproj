@@ -7,6 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Flunt" Version="2.0.5" />
+      <PackageReference Include="MediatR" Version="12.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\ALAYSchoolGest.Infra.CrossCutting\ALAYSchoolGest.Infra.CrossCutting.csproj" />
     </ItemGroup>
 

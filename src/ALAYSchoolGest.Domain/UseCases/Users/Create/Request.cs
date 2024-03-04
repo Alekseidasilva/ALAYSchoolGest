@@ -1,6 +1,8 @@
-﻿namespace ALAYSchoolGest.Domain.UseCases.Users.Create;
+﻿using MediatR;
+namespace ALAYSchoolGest.Domain.UseCases.Users.Create;
 
-public class Request
-{
-    
-}
+
+    public record Request(
+        string Name,
+        string Email,
+        string Password) : IRequest<Response>;

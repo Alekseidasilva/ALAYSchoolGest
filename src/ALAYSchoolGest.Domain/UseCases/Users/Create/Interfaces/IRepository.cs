@@ -1,4 +1,4 @@
-﻿namespace ALAYSchoolGest.Domain.UseCases.User.Create.Interfaces;
+﻿namespace ALAYSchoolGest.Domain.UseCases.Users.Create.Interfaces;
 
 public interface IRepository
 {

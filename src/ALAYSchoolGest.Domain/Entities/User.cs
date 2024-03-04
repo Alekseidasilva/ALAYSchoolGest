@@ -1,6 +1,6 @@
 ﻿using ALAYSchoolGest.Domain.Entities.ValueObjects;
 using ALAYSchoolGest.Domain.Shared;
-using ALAYSchoolGest.Domain.UseCases.User.ValueObjects;
+using ALAYSchoolGest.Domain.UseCases.Users.ValueObjects;
 
 namespace ALAYSchoolGest.Domain.Entities;
 

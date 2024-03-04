@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="AdoNet\" />
+      <Folder Include="Data\" />
+      <Folder Include="UseCases\Mapping\" />
+      <Folder Include="UseCases\Users\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ALAYSchoolGest.Domain\ALAYSchoolGest.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
