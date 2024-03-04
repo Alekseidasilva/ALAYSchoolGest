@@ -10,4 +10,18 @@ public class Configuration
     public static SendGridConfiguration SendGrid { get; set; } = new();
     public static DatabaseConfiguration Database { get; set; } = new();
 
+
+
+
+
+
+
+
+
+    //// TOKEN- Formatos(JWT Jason Web Token)
+    //public static string JwtKey = "lYmgpKdIWkusZjuV69poIg==GBEC8pcePkWlTCSi5GQaYg==";
+    //public static string ApiKeyName = "api_key";
+    //public static string ApiKey = "curso_api_lYmgpKdIWkusZjuV69poIg==G";
+    ////public static SmtpConfiguration Smtp = new();
+
 }
