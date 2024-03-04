@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Services", "01-Services", "{E8268B80-26EE-4FEC-84A8-2F874D6C4514}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Application", "02-Application", "{B6D31EC9-F8B0-450E-B7D6-DA7C8EE671EE}"
@@ -10,12 +13,46 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infra", "04-Infra", "{57
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Tests", "05-Tests", "{E2440E44-AA00-4CD4-B9A5-5AEB73D5A032}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Tests", "tests\ALAYSchoolGest.Tests\ALAYSchoolGest.Tests.csproj", "{3E7B45D1-2A94-4298-9046-40B1444DA5BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{44C30331-F94A-4447-8A59-4253379D36C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{421653AC-ADCD-48F2-8B56-0B04C7361316}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Infra.Data", "src\ALAYSchoolGest.Infra.Data\ALAYSchoolGest.Infra.Data.csproj", "{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALAYSchoolGest.Infra.CrossCutting", "src\ALAYSchoolGest.Infra.CrossCutting\ALAYSchoolGest.Infra.CrossCutting.csproj", "{2E625603-1DCB-4DE0-BE44-329DE3B21984}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALAYSchoolGest.Application", "src\ALAYSchoolGest.Application\ALAYSchoolGest.Application.csproj", "{F44483EA-2548-4EAB-82E9-BFB974A6BE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E7B45D1-2A94-4298-9046-40B1444DA5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7B45D1-2A94-4298-9046-40B1444DA5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7B45D1-2A94-4298-9046-40B1444DA5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7B45D1-2A94-4298-9046-40B1444DA5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04621DB-DC53-48FE-8D1D-94BED3A3EC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E625603-1DCB-4DE0-BE44-329DE3B21984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E625603-1DCB-4DE0-BE44-329DE3B21984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E625603-1DCB-4DE0-BE44-329DE3B21984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E625603-1DCB-4DE0-BE44-329DE3B21984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E7B45D1-2A94-4298-9046-40B1444DA5BE} = {E2440E44-AA00-4CD4-B9A5-5AEB73D5A032}
+		{44C30331-F94A-4447-8A59-4253379D36C0} = {57F2CAA8-FA3C-408F-BE6D-1BCDB75F7D7B}
+		{421653AC-ADCD-48F2-8B56-0B04C7361316} = {57F2CAA8-FA3C-408F-BE6D-1BCDB75F7D7B}
+		{F04621DB-DC53-48FE-8D1D-94BED3A3EC56} = {44C30331-F94A-4447-8A59-4253379D36C0}
+		{2E625603-1DCB-4DE0-BE44-329DE3B21984} = {421653AC-ADCD-48F2-8B56-0B04C7361316}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F44483EA-2548-4EAB-82E9-BFB974A6BE0C} = {B6D31EC9-F8B0-450E-B7D6-DA7C8EE671EE}
