@@ -10,6 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.4.1" />
         <PackageReference Include="coverlet.collector" Version="6.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
         <PackageReference Include="xunit" Version="2.5.3" />
@@ -22,8 +23,11 @@
 
     <ItemGroup>
       <Folder Include="02-Application\" />
-      <Folder Include="03-Domain\" />
       <Folder Include="04-Infra\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\ALAYSchoolGest.Domain\ALAYSchoolGest.Domain.csproj" />
     </ItemGroup>
 
 </Project>
