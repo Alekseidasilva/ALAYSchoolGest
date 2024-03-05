@@ -9,17 +9,26 @@ public class User : EntityBase
     #region Constructor
     protected User() { }
 
+    public User(string email, string? password = null)
+    {
+        Name=email;
+        Email = email;
+        Password = new Password(password);
+    }
+    public User(string name, string email, string? password = null)
+    {
+        Name = name;
+        Email = email;
+        Password = new Password(password);
+    }
     public User(string name, string email, Password password)
     {
         Name = name;
         Email = email;
         Password = password;
     }
-    public User(string email, string? password = null)
-    {
-        Email = email;
-        Password = new Password(password);
-    }
+    
+    
 
     #endregion
     #region Property

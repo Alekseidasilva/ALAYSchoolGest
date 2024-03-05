@@ -1,4 +1,5 @@
 using ALAYSchoolGest.Domain.Entities;
+using ALAYSchoolGest.Domain.UseCases.Users.ValueObjects;
 using ALAYSchoolGest.Tests.Common;
 
 namespace ALAYSchoolGest.Tests._03_Domain.Entities;
@@ -20,21 +21,9 @@ public class UserTestFixture: BaseFixture
             userName = faker.Person.UserName;
         if (userName.Length > 255)
             userName = userName.Substring(0, 255);
-        //categoryName = categoryName[255];
         return userName;
     }
-
-    public string GetValidEmail()
-    {
-        var email = String.Empty;
-        while (email.Length < 3)
-            email = faker.Person.Email;
-        if (email.Length > 255)
-            email = email.Substring(0, 255);
-        //categoryName = categoryName[255];
-        return email;
-    }
-    public string GetValidPassword()
+    public Password GetValidPassword()
     {
         var password = String.Empty;
         while (password.Length < 3)
@@ -42,7 +31,11 @@ public class UserTestFixture: BaseFixture
         if (password.Length > 255)
             password = password.Substring(0, 255);
         //categoryName = categoryName[255];
-        return password;
+        var newPassword =new Password(password);
+
+
+
+        return newPassword!;
     }
     public string GetValidCategoryDescription()
     {
@@ -56,7 +49,29 @@ public class UserTestFixture: BaseFixture
 
 
 
-    public User GetValidUser()
-        => new(GetValidUserName(),GetValidEmail());
+
+
+
+    public string GetValidEmail()
+    {
+        var email = String.Empty;
+        while (email.Length < 3)
+            email = faker.Person.Email;
+        if (email.Length > 255)
+            email = email.Substring(0, 255);
+        //categoryName = categoryName[255];
+        return email;
+    }
+
+
+
+
+    public User GetValidUserWithEmail()
+        => new(GetValidEmail());
+
+    public User GetValidUserWithEmailAndPassword()
+    {
+        return new User(GetValidUserName(), GetValidEmail(), GetValidPassword());
+    }
 
 }
