@@ -1,4 +1,5 @@
 using ALAYSchoolGest.Domain.Entities;
+using FluentAssertions;
 
 namespace ALAYSchoolGest.Tests._03_Domain.Entities;
 
@@ -64,6 +65,22 @@ public class UserTest
     }
     #endregion
 
-    
+    #region InstantiateErrorWhenEmailIsEmpty
+    [Theory(DisplayName = nameof(InstantiateErrorWhenEmailIsEmpty))]
+    [Trait("Domain", "Entities - User")]
+    [InlineData("")]
+    [InlineData(null)]
+    [InlineData("   ")]
+    public void InstantiateErrorWhenEmailIsEmpty(string? email)
+    {
+        var validUser = _userTestFixture.GetValidUserWithEmail();
+        Action action =
+            () => new User(email);
+
+        action.Should()
+            .Throw<EntityValidationException>()
+            .WithMessage("Name Should not be empty or null");
+    }
+    #endregion
 
 }
